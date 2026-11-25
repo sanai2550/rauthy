@@ -102,6 +102,7 @@ unknown_lints = { level = "allow", priority = -1 } # allow nightly lints
 [lints.clippy]
 all = { level = "deny", priority = -1 }
 pedantic = { level = "deny", priority = -1 }
+redundant_clone = "deny"
 
 # Permanently allowed (intentional disagreement with pedantic)
 assert_is_empty = "allow"
@@ -123,7 +124,6 @@ map_unwrap_or = "allow"
 match_same_arms = "allow"
 missing_panics_doc = "allow"
 must_use_candidate = "allow"
-needless_pass_by_value = "allow"
 needless_raw_string_hashes = "allow"
 redundant_closure_for_method_calls = "allow"
 redundant_else = "allow"
